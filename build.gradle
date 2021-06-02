@@ -19,6 +19,8 @@ repositories {
     maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
     maven { url = 'https://oss.sonatype.org/content/repositories/central' }
 
+    maven { url "https://papermc.io/repo/repository/maven-public/" }
+
     maven { url = "https://jitpack.io" }
     maven { url = "https://repo.codemc.org/repository/maven-public/" }
 }
@@ -28,6 +30,8 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 
     compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
+
+    compileOnly "com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT"
 
     compileOnly "dev.jorel.CommandAPI:commandapi-core:5.12"
 }
